@@ -1,7 +1,7 @@
 package org.example.tdd.by.examples;
 
 class Dollar {
-    int amount;
+    private int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
