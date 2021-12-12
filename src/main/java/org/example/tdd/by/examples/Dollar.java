@@ -1,13 +1,7 @@
 package org.example.tdd.by.examples;
 
 class Dollar extends Money {
-
-    public Dollar(int amount) {
-        this.amount = amount;
-
-    }
-
-    Money times(int multiplier) {
-        return new Dollar(this.amount * multiplier);
+    Dollar(int amount, String currency) {
+        super(amount, currency);
     }
 }
