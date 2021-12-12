@@ -1,13 +1,12 @@
 package org.example.tdd.by.examples;
 
-class Franc extends Money{
-
-    public Franc(int amount) {
-        this.amount = amount;
-
+class Franc extends Money {
+    Franc(int amount, String currency) {
+        super(amount, currency);
     }
 
+    @Override
     Money times(int multiplier) {
-        return new Franc(this.amount * multiplier);
+        return Money.franc(this.amount * multiplier);
     }
 }

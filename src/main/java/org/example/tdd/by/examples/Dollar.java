@@ -2,12 +2,12 @@ package org.example.tdd.by.examples;
 
 class Dollar extends Money {
 
-    public Dollar(int amount) {
-        this.amount = amount;
-
+    public Dollar(int amount, String currency) {
+        super(amount, currency);
     }
 
+    @Override
     Money times(int multiplier) {
-        return new Dollar(this.amount * multiplier);
+        return Money.dollar(this.amount * multiplier);
     }
 }
